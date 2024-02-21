@@ -1,0 +1,23 @@
+using Microsoft.AspNetCore.Mvc;
+using PracticeTracker.Services.Authorization.Interfaces;
+using PracticeTracker.Tools.Types;
+
+namespace PracticeTracker.WebAPI.Controllers.Authorization;
+
+[ApiController]
+[Route("[controller]")]
+public class AuthorizationController : ControllerBase
+{
+    private IAuthorizationService _authorizationService;
+   
+    public AuthorizationController(IAuthorizationService authorizationService)
+    {
+        _authorizationService = authorizationService;
+    }
+
+    [HttpPost(Name = "Authorization")]
+    public Response Login(string login, string password)
+    {
+        return _authorizationService.Authorization(login, password);
+    }
+}

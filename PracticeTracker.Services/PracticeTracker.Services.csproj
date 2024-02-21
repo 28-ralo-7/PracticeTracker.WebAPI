@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Folder Include="Authorization\Converters\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\PracticeTracker.Domain\PracticeTracker.Domain.csproj" />
+      <ProjectReference Include="..\PracticeTracker.Tools\PracticeTracker.Tools.csproj" />
+    </ItemGroup>
+
+</Project>

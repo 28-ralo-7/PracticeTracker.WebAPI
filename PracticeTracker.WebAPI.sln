@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeTracker.WebAPI", "PracticeTracker.WebAPI\PracticeTracker.WebAPI.csproj", "{0F2DF1C1-34CD-4495-856C-89FD380E47E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeTracker.Services", "PracticeTracker.Services\PracticeTracker.Services.csproj", "{9753D598-D197-48CD-A7C3-79875DC47208}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeTracker.Tools", "PracticeTracker.Tools\PracticeTracker.Tools.csproj", "{3111E594-3569-4693-B10F-264DA33F6CB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeTracker.Domain", "PracticeTracker.Domain\PracticeTracker.Domain.csproj", "{C78296E9-A20E-4FEF-A794-0FF165F1E5BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0F2DF1C1-34CD-4495-856C-89FD380E47E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F2DF1C1-34CD-4495-856C-89FD380E47E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F2DF1C1-34CD-4495-856C-89FD380E47E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F2DF1C1-34CD-4495-856C-89FD380E47E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9753D598-D197-48CD-A7C3-79875DC47208}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9753D598-D197-48CD-A7C3-79875DC47208}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9753D598-D197-48CD-A7C3-79875DC47208}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9753D598-D197-48CD-A7C3-79875DC47208}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3111E594-3569-4693-B10F-264DA33F6CB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3111E594-3569-4693-B10F-264DA33F6CB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3111E594-3569-4693-B10F-264DA33F6CB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3111E594-3569-4693-B10F-264DA33F6CB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C78296E9-A20E-4FEF-A794-0FF165F1E5BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C78296E9-A20E-4FEF-A794-0FF165F1E5BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C78296E9-A20E-4FEF-A794-0FF165F1E5BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C78296E9-A20E-4FEF-A794-0FF165F1E5BC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
