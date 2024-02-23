@@ -1,8 +1,10 @@
 using PracticeTracker.Domain.User;
+using PracticeTracker.Tools.Types;
 
 namespace PracticeTracker.Services.Users.Interfaces;
 
 public interface IUserService
 {
-    public UserDomain GetUserDomainByLoginAndPassword(string login, string password);
+    public Response GetUserDomainByLoginAndPassword(string login, string passwordHash);
+
 }

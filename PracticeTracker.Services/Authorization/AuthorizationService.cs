@@ -1,28 +1,44 @@
 using PracticeTracker.Services.Authorization.Interfaces;
 using PracticeTracker.Services.Authorization.Validate;
+using PracticeTracker.Services.Role.Interfaces;
+using PracticeTracker.Services.Users.Interfaces;
 using PracticeTracker.Tools.Types;
 
 namespace PracticeTracker.Services.Authorization;
 
 public class AuthorizationService : IAuthorizationService
 {
-    private VAuthorizationService _validator;
+    private readonly VAuthorizationService _validator;
+    private readonly IUserService _userService;
+    private readonly IRoleService _roleService;
 
-    public AuthorizationService(VAuthorizationService validator)
+    public AuthorizationService(VAuthorizationService validator, IUserService userService, IRoleService roleService)
     {
         _validator = validator;
+        _userService = userService;
+        _roleService = roleService;
     }
+
     public Response Authorization(string login, string password)
     {
-        Response response = new Response();
-        List<Error> errors = _validator.ValidateLoginAndPassword(login, password);
+        Response response = _userService.GetUserDomainByLoginAndPassword(login, password);
 
-        if (errors.Count != 0)
+        if (response.IsSuccess)
         {
-            response.AddError(errors);
+            
         }
+        else
+        {
+            
+        } //TODO: learn and add authorization with save
 
-        return null;
-        //UserDB userDb = _userRepository
+        return response;
+    }
+
+    public Response GetPermissions(/*ID id*/)
+    {
+        Response response = _roleService.GetRolesByUserId(/*id*/); //TODO: add roles and class id
+
+        return response;
     }
 }

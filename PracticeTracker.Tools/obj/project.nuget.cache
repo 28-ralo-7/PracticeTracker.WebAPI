@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "e/S1QT5a1cDJ9kIssbdVDQmxUgLclPCxunQzvkk16HeSk29dOWk1CmhLeE+uN0iXZlwaPW0MfrA1MPR15uqA7w==",
+  "dgSpecHash": "vz+1x1d+DMjGN/bJp1GCliONr2TT/asUxHyr1wMoOLc+a06co9NT6ro9JR08ODdJizHc9ezChmTz0rPUQmHacA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ДИ\\Desktop\\PracticeTracker.WebAPI\\PracticeTracker.Tools\\PracticeTracker.Tools.csproj",
+  "projectFilePath": "C:\\Users\\ДК\\RiderProjects\\PracticeTracker.WebAPI\\PracticeTracker.Tools\\PracticeTracker.Tools.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

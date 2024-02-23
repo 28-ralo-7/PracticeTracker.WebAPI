@@ -2,7 +2,7 @@ using PracticeTracker.Tools.Types;
 
 namespace PracticeTracker.Services.Authorization.Validate;
 
-public class VAuthorizationService
+public abstract class VAuthorizationService
 {
     public List<Error> ValidateLoginAndPassword(string login, string password)
     {
