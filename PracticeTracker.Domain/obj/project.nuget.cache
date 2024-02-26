@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "WRfDN/UeJ1+/LJpH2HgwHxDGxp8PY+J8xVEefFFseKBoqc0bOEMy/Qv3ZEMxdyQXWbYwjJnXHXok/7Vd4qzs1g==",
+  "dgSpecHash": "hCpO106TbIU1F9QuL8VORwcMWYzy0fbbcMzSxJZovxNS4bsWE9VSu+QrqC7mmI2R5SCEBT0XeQeZ85XytqmY2g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ДК\\RiderProjects\\PracticeTracker.WebAPI\\PracticeTracker.Domain\\PracticeTracker.Domain.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\ДИ\\Desktop\\PracticeTracker.WebAPI\\PracticeTracker.Domain\\PracticeTracker.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ДИ\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\ДИ\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\ДИ\\.nuget\\packages\\npgsql\\8.0.2\\npgsql.8.0.2.nupkg.sha512"
+  ],
   "logs": []
 }

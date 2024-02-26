@@ -14,6 +14,7 @@ using PracticeTracker.Services.Users.Interfaces;
 using PracticeTracker.Services.Users.Repositories;
 using PracticeTracker.Services.Users.Repositories.Interfaces;
 using PracticeTracker.Services.Users.Validate;
+using PracticeTracker.Tools.Utils;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,6 +26,8 @@ builder.Services.AddControllers().AddJsonOptions(options =>
     options.JsonSerializerOptions.WriteIndented = true;
 });
 
+builder.Configuration.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true).Build();
+//builder.Services.AddSingleton<NpgSqlRepository>(new NpgSqlRepository(builder.Configuration)); TODO: разобраться с конфигурацией
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
