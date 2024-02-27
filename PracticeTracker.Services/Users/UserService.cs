@@ -1,3 +1,5 @@
+using System.Security.Cryptography;
+using System.Text;
 using PracticeTracker.Domain.User;
 using PracticeTracker.Services.Users.Converters;
 using PracticeTracker.Services.Users.Interfaces;
@@ -16,9 +18,10 @@ public class UserService : IUserService
         _userRepository = userRepository;
     }
 
-    public Response GetUserDomainByLoginAndPassword(string login, string passwordHash)
+    public Response GetUserDomainByLoginAndPassword(string login, string password)
     {
         Response response = new Response();
+        string passwordHash = GetPasswordHash(password);
         UserDB userDb = _userRepository.GetUserDbByLoginAndPasswordHash(login, passwordHash);
 
         if (userDb is null)
@@ -33,5 +36,17 @@ public class UserService : IUserService
 
         return response;
     }
-    
+
+    private string GetPasswordHash(string password)
+    {
+        Byte[] bytes = Encoding.Unicode.GetBytes(password);
+        MD5CryptoServiceProvider cryptoService = new MD5CryptoServiceProvider();
+        Byte[] byteHash = cryptoService.ComputeHash(bytes);
+        String hash = String.Empty;
+
+        foreach (Byte b in byteHash)
+            hash += String.Format("{0:x2}", b);
+
+        return hash;
+    }
 }
