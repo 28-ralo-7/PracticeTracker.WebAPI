@@ -2,12 +2,12 @@ namespace PracticeTracker.Services.Users.Models;
 
 public class UserDB
 {
-    public Byte[] Id { get; }
-    public string Login { get; }
-    public string PasswordHash { get; }
-    public string Surname { get; }
-    public string Name { get; }
-    public string Patronomic { get; }
-    public Byte[] GroupId { get; }
-    public bool IsRemoved { get; }
+    public Byte[] Id { get; set; }
+    public string Login { get; set; }
+    public string PasswordHash { get; set; }
+    public string Surname { get; set; }
+    public string Name { get; set; }
+    public string Patronomic { get; set; }
+    public Byte[] GroupId { get; set; }
+    public bool IsRemoved { get; set; }
 }

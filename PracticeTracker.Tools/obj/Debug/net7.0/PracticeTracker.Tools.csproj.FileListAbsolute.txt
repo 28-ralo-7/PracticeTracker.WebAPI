@@ -1,0 +1,12 @@
+C:\Users\ДИ\Desktop\PracticeTracker.WebAPI\PracticeTracker.Tools\bin\Debug\net7.0\PracticeTracker.Tools.deps.json
+C:\Users\ДИ\Desktop\PracticeTracker.WebAPI\PracticeTracker.Tools\bin\Debug\net7.0\PracticeTracker.Tools.dll
+C:\Users\ДИ\Desktop\PracticeTracker.WebAPI\PracticeTracker.Tools\bin\Debug\net7.0\PracticeTracker.Tools.pdb
+C:\Users\ДИ\Desktop\PracticeTracker.WebAPI\PracticeTracker.Tools\obj\Debug\net7.0\PracticeTracker.Tools.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ДИ\Desktop\PracticeTracker.WebAPI\PracticeTracker.Tools\obj\Debug\net7.0\PracticeTracker.Tools.AssemblyInfoInputs.cache
+C:\Users\ДИ\Desktop\PracticeTracker.WebAPI\PracticeTracker.Tools\obj\Debug\net7.0\PracticeTracker.Tools.AssemblyInfo.cs
+C:\Users\ДИ\Desktop\PracticeTracker.WebAPI\PracticeTracker.Tools\obj\Debug\net7.0\PracticeTracker.Tools.csproj.CoreCompileInputs.cache
+C:\Users\ДИ\Desktop\PracticeTracker.WebAPI\PracticeTracker.Tools\obj\Debug\net7.0\PracticeTracker.Tools.dll
+C:\Users\ДИ\Desktop\PracticeTracker.WebAPI\PracticeTracker.Tools\obj\Debug\net7.0\refint\PracticeTracker.Tools.dll
+C:\Users\ДИ\Desktop\PracticeTracker.WebAPI\PracticeTracker.Tools\obj\Debug\net7.0\PracticeTracker.Tools.pdb
+C:\Users\ДИ\Desktop\PracticeTracker.WebAPI\PracticeTracker.Tools\obj\Debug\net7.0\ref\PracticeTracker.Tools.dll
+C:\Users\ДИ\Desktop\PracticeTracker.WebAPI\PracticeTracker.Tools\obj\Debug\net7.0\PracticeTracker.Tools.csproj.AssemblyReference.cache

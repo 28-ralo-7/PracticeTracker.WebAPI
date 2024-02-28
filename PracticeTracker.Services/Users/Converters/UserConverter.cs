@@ -5,8 +5,8 @@ namespace PracticeTracker.Services.Users.Converters;
 
 public abstract class UserConverter
 {
-    public static UserDomain ConvertUserDbToUserDomain(UserDB userDb)
+    public static UserDomain ConvertUserDbToUserDomainWithoutRoles(UserDB userDb)
     {
-        return new UserDomain();
+        return new UserDomain(userDb.Id, userDb.Login, userDb.PasswordHash, userDb.Surname, userDb.Name, userDb.Patronomic, userDb.GroupId, null);
     }
 }

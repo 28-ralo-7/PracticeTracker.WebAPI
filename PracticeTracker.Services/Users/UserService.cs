@@ -30,7 +30,7 @@ public class UserService : IUserService
         }
         else
         {
-            UserDomain userDomain = UserConverter.ConvertUserDbToUserDomain(userDb);
+            UserDomain userDomain = UserConverter.ConvertUserDbToUserDomainWithoutRoles(userDb);
             response = Response.Success(userDomain);
         }
 

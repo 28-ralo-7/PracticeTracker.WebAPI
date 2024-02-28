@@ -1,4 +1,5 @@
 using System.Collections.Immutable;
+using System.Reflection;
 using Npgsql;
 using Microsoft.Extensions;
 namespace PracticeTracker.Tools.Utils;
@@ -6,27 +7,28 @@ namespace PracticeTracker.Tools.Utils;
 public class NpgSqlRepository
 {
     private String ConnectionString = "Host=localhost;Port=5432;Database=practice_tracker;Username=postgres;Password=1";
-    private NpgsqlConnection connection;
-    
-    public NpgSqlRepository()
-    {
-        connection = new NpgsqlConnection(ConnectionString);
-        connection.Open();
-    }
-    
+
     public T Get<T>(String command) where T : new()
     {
-        using (NpgsqlCommand cmd = new NpgsqlCommand(command, connection))
+        T objectDb = new T();
+
+        using (NpgsqlConnection connection = new NpgsqlConnection(ConnectionString))
         {
-            using (NpgsqlDataReader reader = cmd.ExecuteReader())
-                while (reader.Read())
-                {
-                    T objectDb = Read<T>(reader);
-                    return objectDb;
-                }
+            connection.Open();
+
+            using (NpgsqlCommand cmd = new NpgsqlCommand(command, connection))
+            {
+                using (NpgsqlDataReader reader = cmd.ExecuteReader())
+                    while (reader.Read())
+                    {
+                        objectDb = Read<T>(reader);
+                    }
+            }
+
+            connection.Close();
         }
 
-        return new T();
+        return objectDb;
     }
 
     private static T Read<T>(NpgsqlDataReader reader)
@@ -36,8 +38,7 @@ public class NpgSqlRepository
         for (int i = 0; i < reader.FieldCount; i++)
         {
             string propertyName = reader.GetName(i);
-            var property = typeof(T).GetProperties()
-                .FirstOrDefault(p => string.Equals(p.Name, propertyName, StringComparison.OrdinalIgnoreCase)); 
+            var property = typeof(T).GetProperty(propertyName, BindingFlags.Instance | BindingFlags.Public | BindingFlags.IgnoreCase);
 
             if (property != null)
             {
@@ -45,13 +46,11 @@ public class NpgSqlRepository
 
                 if (value != DBNull.Value)
                 {
-                    property.SetMethod?.Invoke(objectDb, new object[] { Convert.ChangeType(value, property.PropertyType) });
+                    property.SetValue(objectDb, value);
                 }
             }
         }
 
         return objectDb;
     }
-    
-    
 }
