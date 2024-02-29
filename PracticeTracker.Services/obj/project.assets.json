@@ -229,19 +229,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ДИ\\.nuget\\packages\\": {}
+    "C:\\Users\\dkoze\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ДИ\\Desktop\\PracticeTracker.WebAPI\\PracticeTracker.Services\\PracticeTracker.Services.csproj",
+      "projectUniqueName": "C:\\Users\\dkoze\\PracticeTracker.WebAPI\\PracticeTracker.Services\\PracticeTracker.Services.csproj",
       "projectName": "PracticeTracker.Services",
-      "projectPath": "C:\\Users\\ДИ\\Desktop\\PracticeTracker.WebAPI\\PracticeTracker.Services\\PracticeTracker.Services.csproj",
-      "packagesPath": "C:\\Users\\ДИ\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ДИ\\Desktop\\PracticeTracker.WebAPI\\PracticeTracker.Services\\obj\\",
+      "projectPath": "C:\\Users\\dkoze\\PracticeTracker.WebAPI\\PracticeTracker.Services\\PracticeTracker.Services.csproj",
+      "packagesPath": "C:\\Users\\dkoze\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dkoze\\PracticeTracker.WebAPI\\PracticeTracker.Services\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ДИ\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\dkoze\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -253,11 +253,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\ДИ\\Desktop\\PracticeTracker.WebAPI\\PracticeTracker.Domain\\PracticeTracker.Domain.csproj": {
-              "projectPath": "C:\\Users\\ДИ\\Desktop\\PracticeTracker.WebAPI\\PracticeTracker.Domain\\PracticeTracker.Domain.csproj"
+            "C:\\Users\\dkoze\\PracticeTracker.WebAPI\\PracticeTracker.Domain\\PracticeTracker.Domain.csproj": {
+              "projectPath": "C:\\Users\\dkoze\\PracticeTracker.WebAPI\\PracticeTracker.Domain\\PracticeTracker.Domain.csproj"
             },
-            "C:\\Users\\ДИ\\Desktop\\PracticeTracker.WebAPI\\PracticeTracker.Tools\\PracticeTracker.Tools.csproj": {
-              "projectPath": "C:\\Users\\ДИ\\Desktop\\PracticeTracker.WebAPI\\PracticeTracker.Tools\\PracticeTracker.Tools.csproj"
+            "C:\\Users\\dkoze\\PracticeTracker.WebAPI\\PracticeTracker.Tools\\PracticeTracker.Tools.csproj": {
+              "projectPath": "C:\\Users\\dkoze\\PracticeTracker.WebAPI\\PracticeTracker.Tools\\PracticeTracker.Tools.csproj"
             }
           }
         }
@@ -293,7 +293,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.405\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.408\\RuntimeIdentifierGraph.json"
       }
     }
   }

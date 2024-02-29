@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "hCpO106TbIU1F9QuL8VORwcMWYzy0fbbcMzSxJZovxNS4bsWE9VSu+QrqC7mmI2R5SCEBT0XeQeZ85XytqmY2g==",
+  "dgSpecHash": "L4VIy8VZCZ5Dhw3+ubrJy3RaRDro+UZc7qcvbMSCcwptldN+mAsEztrk+/hKO/ymkST0BINth4YZXNJ6sveq3Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ДИ\\Desktop\\PracticeTracker.WebAPI\\PracticeTracker.Domain\\PracticeTracker.Domain.csproj",
+  "projectFilePath": "C:\\Users\\dkoze\\PracticeTracker.WebAPI\\PracticeTracker.Domain\\PracticeTracker.Domain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\ДИ\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
-    "C:\\Users\\ДИ\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
-    "C:\\Users\\ДИ\\.nuget\\packages\\npgsql\\8.0.2\\npgsql.8.0.2.nupkg.sha512"
+    "C:\\Users\\dkoze\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\dkoze\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\dkoze\\.nuget\\packages\\npgsql\\8.0.2\\npgsql.8.0.2.nupkg.sha512"
   ],
   "logs": []
 }
