@@ -20,10 +20,4 @@ public class AuthorizationController : ControllerBase
     {
         return _authorizationService.Authorization(login, password);
     }
-
-    [HttpGet(Name = "GetPermissions")]
-    public Response GetPermissions()
-    {
-        return _authorizationService.GetPermissions(/*_currentUser.Id*/);
-    }
 }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ДИ\\Desktop\\PracticeTracker.WebAPI\\PracticeTracker.WebAPI\\PracticeTracker.WebAPI.csproj": {}
+    "C:\\Users\\ДК\\Desktop\\Новая папка\\PracticeTracker.WebAPI\\PracticeTracker.WebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ДИ\\Desktop\\PracticeTracker.WebAPI\\PracticeTracker.Domain\\PracticeTracker.Domain.csproj": {
+    "C:\\Users\\ДК\\Desktop\\Новая папка\\PracticeTracker.Domain\\PracticeTracker.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ДИ\\Desktop\\PracticeTracker.WebAPI\\PracticeTracker.Domain\\PracticeTracker.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\ДК\\Desktop\\Новая папка\\PracticeTracker.Domain\\PracticeTracker.Domain.csproj",
         "projectName": "PracticeTracker.Domain",
-        "projectPath": "C:\\Users\\ДИ\\Desktop\\PracticeTracker.WebAPI\\PracticeTracker.Domain\\PracticeTracker.Domain.csproj",
-        "packagesPath": "C:\\Users\\ДИ\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ДИ\\Desktop\\PracticeTracker.WebAPI\\PracticeTracker.Domain\\obj\\",
+        "projectPath": "C:\\Users\\ДК\\Desktop\\Новая папка\\PracticeTracker.Domain\\PracticeTracker.Domain.csproj",
+        "packagesPath": "C:\\Users\\ДК\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ДК\\Desktop\\Новая папка\\PracticeTracker.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ДИ\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\ДК\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -59,21 +59,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.405\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\ДК\\.dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ДИ\\Desktop\\PracticeTracker.WebAPI\\PracticeTracker.Services\\PracticeTracker.Services.csproj": {
+    "C:\\Users\\ДК\\Desktop\\Новая папка\\PracticeTracker.Services\\PracticeTracker.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ДИ\\Desktop\\PracticeTracker.WebAPI\\PracticeTracker.Services\\PracticeTracker.Services.csproj",
+        "projectUniqueName": "C:\\Users\\ДК\\Desktop\\Новая папка\\PracticeTracker.Services\\PracticeTracker.Services.csproj",
         "projectName": "PracticeTracker.Services",
-        "projectPath": "C:\\Users\\ДИ\\Desktop\\PracticeTracker.WebAPI\\PracticeTracker.Services\\PracticeTracker.Services.csproj",
-        "packagesPath": "C:\\Users\\ДИ\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ДИ\\Desktop\\PracticeTracker.WebAPI\\PracticeTracker.Services\\obj\\",
+        "projectPath": "C:\\Users\\ДК\\Desktop\\Новая папка\\PracticeTracker.Services\\PracticeTracker.Services.csproj",
+        "packagesPath": "C:\\Users\\ДК\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ДК\\Desktop\\Новая папка\\PracticeTracker.Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ДИ\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\ДК\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -85,11 +85,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\ДИ\\Desktop\\PracticeTracker.WebAPI\\PracticeTracker.Domain\\PracticeTracker.Domain.csproj": {
-                "projectPath": "C:\\Users\\ДИ\\Desktop\\PracticeTracker.WebAPI\\PracticeTracker.Domain\\PracticeTracker.Domain.csproj"
+              "C:\\Users\\ДК\\Desktop\\Новая папка\\PracticeTracker.Domain\\PracticeTracker.Domain.csproj": {
+                "projectPath": "C:\\Users\\ДК\\Desktop\\Новая папка\\PracticeTracker.Domain\\PracticeTracker.Domain.csproj"
               },
-              "C:\\Users\\ДИ\\Desktop\\PracticeTracker.WebAPI\\PracticeTracker.Tools\\PracticeTracker.Tools.csproj": {
-                "projectPath": "C:\\Users\\ДИ\\Desktop\\PracticeTracker.WebAPI\\PracticeTracker.Tools\\PracticeTracker.Tools.csproj"
+              "C:\\Users\\ДК\\Desktop\\Новая папка\\PracticeTracker.Tools\\PracticeTracker.Tools.csproj": {
+                "projectPath": "C:\\Users\\ДК\\Desktop\\Новая папка\\PracticeTracker.Tools\\PracticeTracker.Tools.csproj"
               }
             }
           }
@@ -107,6 +107,10 @@
             "Npgsql": {
               "target": "Package",
               "version": "[8.0.2, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.35.0, )"
             }
           },
           "imports": [
@@ -125,21 +129,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.405\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\ДК\\.dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ДИ\\Desktop\\PracticeTracker.WebAPI\\PracticeTracker.Tools\\PracticeTracker.Tools.csproj": {
+    "C:\\Users\\ДК\\Desktop\\Новая папка\\PracticeTracker.Tools\\PracticeTracker.Tools.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ДИ\\Desktop\\PracticeTracker.WebAPI\\PracticeTracker.Tools\\PracticeTracker.Tools.csproj",
+        "projectUniqueName": "C:\\Users\\ДК\\Desktop\\Новая папка\\PracticeTracker.Tools\\PracticeTracker.Tools.csproj",
         "projectName": "PracticeTracker.Tools",
-        "projectPath": "C:\\Users\\ДИ\\Desktop\\PracticeTracker.WebAPI\\PracticeTracker.Tools\\PracticeTracker.Tools.csproj",
-        "packagesPath": "C:\\Users\\ДИ\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ДИ\\Desktop\\PracticeTracker.WebAPI\\PracticeTracker.Tools\\obj\\",
+        "projectPath": "C:\\Users\\ДК\\Desktop\\Новая папка\\PracticeTracker.Tools\\PracticeTracker.Tools.csproj",
+        "packagesPath": "C:\\Users\\ДК\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ДК\\Desktop\\Новая папка\\PracticeTracker.Tools\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ДИ\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\ДК\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -163,6 +167,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.35.0, )"
+            },
             "Npgsql": {
               "target": "Package",
               "version": "[8.0.2, )"
@@ -184,37 +192,38 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.405\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\ДК\\.dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ДИ\\Desktop\\PracticeTracker.WebAPI\\PracticeTracker.WebAPI\\PracticeTracker.WebAPI.csproj": {
+    "C:\\Users\\ДК\\Desktop\\Новая папка\\PracticeTracker.WebAPI\\PracticeTracker.WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ДИ\\Desktop\\PracticeTracker.WebAPI\\PracticeTracker.WebAPI\\PracticeTracker.WebAPI.csproj",
+        "projectUniqueName": "C:\\Users\\ДК\\Desktop\\Новая папка\\PracticeTracker.WebAPI\\PracticeTracker.WebAPI.csproj",
         "projectName": "PracticeTracker.WebAPI",
-        "projectPath": "C:\\Users\\ДИ\\Desktop\\PracticeTracker.WebAPI\\PracticeTracker.WebAPI\\PracticeTracker.WebAPI.csproj",
-        "packagesPath": "C:\\Users\\ДИ\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ДИ\\Desktop\\PracticeTracker.WebAPI\\PracticeTracker.WebAPI\\obj\\",
+        "projectPath": "C:\\Users\\ДК\\Desktop\\Новая папка\\PracticeTracker.WebAPI\\PracticeTracker.WebAPI.csproj",
+        "packagesPath": "C:\\Users\\ДК\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ДК\\Desktop\\Новая папка\\PracticeTracker.WebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ДИ\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\ДК\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Users\\ДК\\.dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\ДИ\\Desktop\\PracticeTracker.WebAPI\\PracticeTracker.Services\\PracticeTracker.Services.csproj": {
-                "projectPath": "C:\\Users\\ДИ\\Desktop\\PracticeTracker.WebAPI\\PracticeTracker.Services\\PracticeTracker.Services.csproj"
+              "C:\\Users\\ДК\\Desktop\\Новая папка\\PracticeTracker.Services\\PracticeTracker.Services.csproj": {
+                "projectPath": "C:\\Users\\ДК\\Desktop\\Новая папка\\PracticeTracker.Services\\PracticeTracker.Services.csproj"
               },
-              "C:\\Users\\ДИ\\Desktop\\PracticeTracker.WebAPI\\PracticeTracker.Tools\\PracticeTracker.Tools.csproj": {
-                "projectPath": "C:\\Users\\ДИ\\Desktop\\PracticeTracker.WebAPI\\PracticeTracker.Tools\\PracticeTracker.Tools.csproj"
+              "C:\\Users\\ДК\\Desktop\\Новая папка\\PracticeTracker.Tools\\PracticeTracker.Tools.csproj": {
+                "projectPath": "C:\\Users\\ДК\\Desktop\\Новая папка\\PracticeTracker.Tools\\PracticeTracker.Tools.csproj"
               }
             }
           }
@@ -229,6 +238,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[7.0.16, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.15, )"
@@ -261,7 +274,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.405\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\ДК\\.dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }

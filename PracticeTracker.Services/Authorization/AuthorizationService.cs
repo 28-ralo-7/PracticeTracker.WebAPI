@@ -1,8 +1,13 @@
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using Microsoft.IdentityModel.Tokens;
+using PracticeTracker.Domain.User;
 using PracticeTracker.Services.Authorization.Interfaces;
 using PracticeTracker.Services.Authorization.Validate;
 using PracticeTracker.Services.Role.Interfaces;
 using PracticeTracker.Services.Users.Interfaces;
 using PracticeTracker.Tools.Types;
+using PracticeTracker.Tools.Utils;
 
 namespace PracticeTracker.Services.Authorization;
 
@@ -21,24 +26,37 @@ public class AuthorizationService : IAuthorizationService
 
     public Response Authorization(string login, string password)
     {
-        Response response = _userService.GetUserDomainByLoginAndPassword(login, password);
+        Response authResponse;
+        Response userServiceResponse = _userService.GetUserDomainByLoginAndPassword(login, password);
 
-        if (response.IsSuccess)
+        if (userServiceResponse.IsSuccess)
         {
-            
+            string token = GenerateJWT(userServiceResponse.Data);
+            authResponse = Response.Success(token);
         }
         else
         {
-            
-        } //TODO: learn and add authorization with save
+            authResponse = Response.Failed(userServiceResponse.Errors);
+        }
 
-        return response;
+        return authResponse;
     }
 
-    public Response GetPermissions(/*ID id*/)
+    private string GenerateJWT(UserDomain user)
     {
-        Response response = _roleService.GetRolesByUserId(/*id*/); //TODO: add roles and class id
+        List<Claim> claims = new List<Claim>
+        {
+            new Claim(ClaimTypes.Name, user.Login),
+            new Claim(ClaimTypes.Role, user.Role.Type),
+        };
+        JwtSecurityToken? jwt = new JwtSecurityToken(
+            issuer: AuthOptions.ISSUER,
+            audience: AuthOptions.AUDIENCE,
+            claims: claims,
+            expires: DateTime.UtcNow.Add(TimeSpan.FromMinutes(2)),
+            signingCredentials: new SigningCredentials(AuthOptions.GetSymmetricSecurityKey(), SecurityAlgorithms.HmacSha256));
+        string? encodedJwt = new JwtSecurityTokenHandler().WriteToken(jwt);
 
-        return response;
+        return encodedJwt;
     }
 }

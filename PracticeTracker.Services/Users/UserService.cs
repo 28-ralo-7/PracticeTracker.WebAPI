@@ -29,8 +29,8 @@ public class UserService : IUserService
             response = Response.Failed("Пользователь не найден");
         }
         else
-        {
-            UserDomain userDomain = UserConverter.ConvertUserDbToUserDomainWithoutRoles(userDb);
+        {//TODO: add Role and Group service/repository
+            UserDomain userDomain = UserConverter.ConvertUserDbToUserDomainWithoutRoles(userDb, null, null);
             response = Response.Success(userDomain);
         }
 

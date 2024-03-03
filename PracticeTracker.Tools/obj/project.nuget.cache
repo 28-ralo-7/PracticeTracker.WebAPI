@@ -1,12 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "kQL/wqJIZBGMK+JlkUBc/4/1ZJjFGW3AbpqMkHHlBCZeYvc4dZZ45NvdqAG1jLANhogsy7MnEWDlxNF0ahJFrw==",
+  "dgSpecHash": "YH6x0KySfzhzSLhfHxdtPfsiR+dTCQGahD0lz08ErjYQlASIPbdjLIUe6Sb9gjdRM+cg6ONebSYHmbEkevMdfw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ДИ\\Desktop\\PracticeTracker.WebAPI\\PracticeTracker.Tools\\PracticeTracker.Tools.csproj",
+  "projectFilePath": "C:\\Users\\ДК\\Desktop\\Новая папка\\PracticeTracker.Tools\\PracticeTracker.Tools.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\ДИ\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
-    "C:\\Users\\ДИ\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
-    "C:\\Users\\ДИ\\.nuget\\packages\\npgsql\\8.0.2\\npgsql.8.0.2.nupkg.sha512"
+    "C:\\Users\\ДК\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\ДК\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\ДК\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\ДК\\.nuget\\packages\\microsoft.identitymodel.abstractions\\6.35.0\\microsoft.identitymodel.abstractions.6.35.0.nupkg.sha512",
+    "C:\\Users\\ДК\\.nuget\\packages\\microsoft.identitymodel.logging\\6.35.0\\microsoft.identitymodel.logging.6.35.0.nupkg.sha512",
+    "C:\\Users\\ДК\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.35.0\\microsoft.identitymodel.tokens.6.35.0.nupkg.sha512",
+    "C:\\Users\\ДК\\.nuget\\packages\\npgsql\\8.0.2\\npgsql.8.0.2.nupkg.sha512",
+    "C:\\Users\\ДК\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"
   ],
   "logs": []
 }

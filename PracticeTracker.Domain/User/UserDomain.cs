@@ -1,3 +1,6 @@
+using PracticeTracker.Domain.Group;
+using PracticeTracker.Domain.Role;
+
 namespace PracticeTracker.Domain.User;
 
 public class UserDomain
@@ -8,10 +11,10 @@ public class UserDomain
     public string Surname { get; }
     public string Name { get; }
     public string Patronomic { get; }
-    public string GroupId { get; }
-    public string[] RoleIds { get; }
+    public GroupDomain Group { get; }
+    public RoleDomain Role { get; }
 
-    public UserDomain(byte[] id, string login, string passwordHash, string surname, string name, string patronomic, byte[] groupId, byte[][] roleIds)
+    public UserDomain(byte[] id, string login, string passwordHash, string surname, string name, string patronomic, GroupDomain group, RoleDomain role)
     {
         Id = System.Text.Encoding.UTF8.GetString(id);
         Login = login;
@@ -19,9 +22,7 @@ public class UserDomain
         Surname = surname;
         Name = name;
         Patronomic = patronomic;
-        GroupId = System.Text.Encoding.UTF8.GetString(groupId);
-        RoleIds = roleIds is not null 
-            ? roleIds.Select(roleId => System.Text.Encoding.UTF8.GetString(roleId)).ToArray() 
-            : new string[]{};
+        Group = group;
+        Role = role;
     }
 }
