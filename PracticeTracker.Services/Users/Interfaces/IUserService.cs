@@ -5,6 +5,6 @@ namespace PracticeTracker.Services.Users.Interfaces;
 
 public interface IUserService
 {
-    public Response GetUserDomainByLoginAndPassword(string login, string passwordHash);
+    public Response GetUserByLoginAndPassword(string login, string passwordHash);
 
 }

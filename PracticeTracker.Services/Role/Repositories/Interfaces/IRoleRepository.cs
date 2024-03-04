@@ -4,5 +4,5 @@ namespace PracticeTracker.Services.Role.Repositories.Interfaces;
 
 public interface IRoleRepository
 {
-    public RoleDB[] GetRolesByUserId( /*id*/);//TODO: add roles
+    RoleDB GetRoleById(byte[] id);//TODO: add roles
 }

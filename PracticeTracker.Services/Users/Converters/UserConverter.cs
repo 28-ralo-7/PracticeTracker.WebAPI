@@ -6,9 +6,9 @@ using PracticeTracker.Services.Users.Models;
 
 namespace PracticeTracker.Services.Users.Converters;
 
-public abstract class UserConverter
+public static class UserConverter
 {
-    public static UserDomain ConvertUserDbToUserDomainWithoutRoles(UserDB userDb, GroupDomain groupDomain, RoleDomain roleDomain)
+    public static UserDomain ConvertUserDbToUserDomainWithoutRoles(this UserDB userDb, GroupDomain groupDomain, RoleDomain roleDomain)
     {
         return new UserDomain(userDb.Id, userDb.Login, userDb.PasswordHash, userDb.Surname, userDb.Name, userDb.Patronomic, groupDomain, roleDomain);
     }

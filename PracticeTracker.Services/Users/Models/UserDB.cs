@@ -9,5 +9,6 @@ public class UserDB
     public string Name { get; set; }
     public string Patronomic { get; set; }
     public Byte[] GroupId { get; set; }
+    public Byte[] RoleId { get; set; }
     public bool IsRemoved { get; set; }
 }

@@ -4,5 +4,5 @@ namespace PracticeTracker.Services.Role.Interfaces;
 
 public interface IRoleService
 {
-    public Response GetRolesByUserId(/*ID id*/);
+    public Response GetRoleById(byte[] id);
 }

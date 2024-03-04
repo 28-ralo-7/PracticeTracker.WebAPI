@@ -7,7 +7,12 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <Folder Include="Attendance\" />
       <Folder Include="Authorization\Converters\" />
+      <Folder Include="Group\Converters\" />
+      <Folder Include="Group\Interfaces\" />
+      <Folder Include="Practice\" />
+      <Folder Include="Schedule\" />
     </ItemGroup>
 
     <ItemGroup>

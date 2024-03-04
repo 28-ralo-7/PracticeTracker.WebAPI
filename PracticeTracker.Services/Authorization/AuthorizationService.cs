@@ -27,7 +27,7 @@ public class AuthorizationService : IAuthorizationService
     public Response Authorization(string login, string password)
     {
         Response authResponse;
-        Response userServiceResponse = _userService.GetUserDomainByLoginAndPassword(login, password);
+        Response userServiceResponse = _userService.GetUserByLoginAndPassword(login, password);
 
         if (userServiceResponse.IsSuccess)
         {

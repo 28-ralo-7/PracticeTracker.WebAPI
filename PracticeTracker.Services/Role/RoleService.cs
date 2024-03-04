@@ -1,5 +1,7 @@
+using PracticeTracker.Domain.Role;
 using PracticeTracker.Services.Role.Converters;
 using PracticeTracker.Services.Role.Interfaces;
+using PracticeTracker.Services.Role.Models;
 using PracticeTracker.Services.Role.Repositories.Interfaces;
 using PracticeTracker.Tools.Types;
 
@@ -14,18 +16,18 @@ public class RoleService : IRoleService
         _roleRepository = roleRepository;
     }
 
-    public Response GetRolesByUserId(/*ID id*/)
+    public Response GetRoleById(byte[] id)
     {
         Response response = new Response();
-        var roleDbs = _roleRepository.GetRolesByUserId( /*id*/);//TODO: add roles
+        RoleDB roleDb = _roleRepository.GetRoleById(id);
 
-        if (roleDbs is null)
+        if (roleDb is null)
         {
-            response.AddError("Данный пользователь не имеет ролей");
+            response.AddError("Данный пользователь не имеет роли");
         }
         else
         {
-            var roleDomains = RoleConverter.ConvertRoleDbsToRoleDomains(roleDbs); //TODO: add role
+            RoleDomain roleDomains = roleDb.ConvertToRoleDomain();
             response = Response.Success(roleDomains);
         }
 
