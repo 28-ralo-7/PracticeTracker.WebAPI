@@ -11,8 +11,9 @@ public class RoleRepository : NpgSqlRepository, IRoleRepository
     {
         try
         {
-            string idString = Encoding.ASCII.GetString(id);
-            string command = $"SELECT * FROM us_role WHERE id = '{idString}'";
+            
+            string idString = ByteArrayTools.ByteArrayToString(id);
+            string command = $"SELECT * FROM us_role WHERE id = decode('{idString}', 'hex')";
             RoleDB roleDb = Get<RoleDB>(command);
 
             return roleDb;
